@@ -50,6 +50,11 @@
             font-weight: 900;
         }
 
+        /* Estilo para a palavra TRIO em Dourado */
+        h1 span.gold-text {
+            color: #e5c158; /* Dourado ouro */
+        }
+
         .subtitle {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             font-size: 1.1rem;
@@ -76,7 +81,7 @@
             font-weight: 600;
         }
 
-        /* Destaque da Apresentação Musical (Limpo e Direto) */
+        /* Destaque da Apresentação Musical */
         .featured-event {
             border-left: 4px solid #4cd9ef;
             background-color: #222226;
@@ -110,6 +115,11 @@
             margin-bottom: 10px;
         }
 
+        /* Dourado aplicado também no TRIO do evento musical */
+        .event-title span.gold-text {
+            color: #e5c158;
+        }
+
         .event-details {
             font-size: 1.25rem;
             color: #ffffff;
@@ -129,9 +139,10 @@
             margin: 0 auto;
         }
 
-        /* Lista de Projetos e Contratos */
+        /* Lista de Projetos e Seção de Contratos */
         .projects-list {
             list-style: none;
+            margin-bottom: 25px;
         }
 
         .projects-list li {
@@ -151,6 +162,41 @@
             color: #ffffff;
             display: block;
             margin-bottom: 6px;
+        }
+
+        .contract-info {
+            background-color: #121214;
+            border: 1px solid #2d2d30;
+            border-radius: 6px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .contract-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .catalise-logo {
+            max-width: 80px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .contract-text h3 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .contract-text p {
+            font-size: 0.95rem;
+            color: #a3a3a3;
+            margin-bottom: 4px;
         }
 
         /* Contatos e Redes */
@@ -200,7 +246,7 @@
         <!-- Informação do Site com Banner no Topo -->
         <header>
             <img src="banner.jpg.webp" alt="Banner HAICAI TRIO" class="header-banner">
-            <h1>HAICAI TRIO</h1>
+            <h1>HAICAI <span class="gold-text">TRIO</span></h1>
             <p class="subtitle">Em breve, um novo site estará disponível!</p>
         </header>
 
@@ -209,7 +255,7 @@
             <h2>Não Perca Nossa Próxima Apresentação</h2>
             <div class="event-box">
                 <span class="event-badge">Aproveite a Entrada Gratuita!</span>
-                <div class="event-title">HAICAI TRIO</div>
+                <div class="event-title">HAICAI <span class="gold-text">TRIO</span></div>
                 <div class="event-details">
                     Dia 22/10 às 19h30 <br>
                     Local: Teatro Londrina <br>
@@ -234,35 +280,42 @@
                     <p>Contratação de apresentações sob medida com repertório sofisticado para solenidades e jantares.</p>
                 </li>
             </ul>
+
+            <!-- Detalhes de Contratação / Catálise -->
+            <div class="contract-info">
+                <img src="catalise-logo.png.webp" alt="Catálise Produções" class="catalise-logo">
+                <div class="contract-text">
+                    <h3>Catálise Produções Culturais</h3>
+                    <p><strong>E-mail:</strong> <a href="mailto:projetos@cataliseproducoes.com">projetos@cataliseproducoes.com</a></p>
+                    <p><strong>Contato:</strong> Josnel Garcia de Carvalho</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me" target="_blank" style="color: #4cd9ef;">(41) 98744-3350</a></p>
+                </div>
+            </div>
         </section>
 
         <!-- Contato e Rede Social -->
         <section>
-            <h2>Contato e Rede Social</h2>
+            <h2>Contactos e Redes Sociais</h2>
             <div class="grid-footer">
                 <div>
                     <ul class="info-links">
                         <li><strong>E-mail:</strong> <a href="mailto:contato@triohaicai.com">contato@triohaicai.com</a></li>
-                        <li><strong>Telefone:</strong> <a href="tel:+5500000000000">(00) 00000-0000</a></li>
+                        <li><strong>WhatsApp Trio:</strong> <a href="https://wa.me" target="_blank" style="color: #4cd9ef;">(41) 98862-2622</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul class="info-links">
-                        <li><a href="#" target="_blank">→ Instagram</a></li>
-                        <li><a href="#" target="_blank">→ YouTube</a></li>
+                        <li><a href="https://instagram.com" target="_blank">→ Instagram</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=_nM7jSwC0cE" target="_blank">→ YouTube</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-
-
-
         <!-- Direitos Autorais -->
         <footer>
-            <p>&copy; 2026 Trio Haicai. Todos os direitos reservados.</p>
-	    <p> Desenvolvido por F@lk!!! </p>
-
+            <p>&copy; 2026 HAICAI TRIO. Todos os direitos reservados.</p>
+            <p>Desenvolvido por \_F@lk_/!!!</p>
         </footer>
 
     </div>
