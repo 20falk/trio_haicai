@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - HAICAI TRIO</title>
+    <!-- Ícone para o botão de voltar -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        /* Configurações Gerais - Fundo Negro Total */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #000000; /* Fundo Negro Total */
+            color: #d1d1d1; /* Texto cinza claro */
+            line-height: 1.8;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Caixa Centralizada de Conteúdo */
+        .content-card {
+            background-color: #121214; /* Grafite escuro */
+            border: 1px solid #2d2d30;
+            border-radius: 8px;
+            max-width: 700px;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Botão Voltar Compacto */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #8c8c8c;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            transition: color 0.2s ease;
+        }
+        .back-link:hover {
+            color: #4cd9ef;
+        }
+
+        /* Cabeçalho de Títulos */
+        header {
+            text-align: center;
+            margin-bottom: 25px; /* Ajustado para aproximar do banner */
+        }
+        .section-tag {
+            font-size: 0.9rem;
+            color: #e5c158; /* Dourado Ouro */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        h1 {
+            font-family: 'Arial Black', 'Impact', sans-serif;
+            font-size: 2.2rem;
+            color: #4cd9ef; /* Azul Ciano */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 900;
+        }
+
+        /* Alinhamento da Imagem do Banner Reduzida */
+        .image-wrapper {
+            text-align: center;
+            margin-bottom: 35px; /* Espaço confortável antes do início do texto */
+        }
+        .story-banner {
+            max-width: 45%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #2d2d30;
+            opacity: 0.9;
+        }
+        @media (max-width: 500px) {
+            .story-banner {
+                max-width: 70%;
+            }
+        }
+
+        /* Corpo do Texto com Recuo de Parágrafo */
+        .story-text p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            text-align: justify;
+            text-indent: 40px; /* Recuo de parágrafo */
+        }
+        .story-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Rodapé Interno */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #2d2d2d;
+            color: #555555;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="content-card">
+        
+        <!-- Botão Voltar -->
+        <a href="../index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Voltar ao Início
+        </a>
+
+        <!-- Identidade Visual (Títulos Acima) -->
+        <header>
+            <span class="section-tag">Sobre o Grupo</span>
+            <h1>História</h1>
+        </header>
+
+        <!-- Foto do Banner (Abaixo dos Títulos) -->
+        <div class="image-wrapper">
+            <img src="../banner.jpg.webp" alt="HAICAI TRIO" class="story-banner">
+        </div>
+
+        <!-- Conteúdo de Texto -->
+        <div class="story-text">
+            <p>O Trio Haicai nasceu do desejo de explorar novas possibilidades sonoras, reunindo a expressividade da clarineta, a intensidade do clarone e a riqueza harmônica do piano em uma formação instrumental singular.</p>
+            
+            <p>Com cerca de três anos de trajetória, o Trio se destaca no cenário musical de Curitiba como grupo de excelência, apresentando-se em diversos espaços culturais da cidade e conquistando o público com um trabalho sensível, criativo e envolvente.</p>
+            
+            <p>A formação instrumental é inovadora e arrojada. Sua proposta consiste em explorar arranjos e ampliar composições originais, mas também adaptar o repertório tradicional brasileiro e internacional, para demonstrar a riqueza de sonoridades dos três instrumentos.</p>
+            
+            <p>Em suas apresentações, o Trio Haicai busca criar uma experience especial, próxima e expressiva, conectando o público à música de concerto por meio de uma identidade artística marcada pela sensibilidade e pela brasilidade.</p>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2026 HAICAI TRIO. Todos os direitos reservados.</p>
+        </footer>
+
+    </article>
+
+</body>
+</html>
