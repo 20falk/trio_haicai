@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes - HAICAI TRIO</title>
+    <!-- Ícone para o botão de voltar -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <style>
+        /* Configurações Gerais - Fundo Cinza Escuro */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1c1c1e; /* Fundo Cinza Escuro pedido */
+            color: #d1d1d1; /* Texto cinza claro */
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 950px; /* Largura expandida para acomodar foto + texto lado a lado */
+            margin: 0 auto;
+        }
+
+        /* Caixa Centralizada de Conteúdo */
+        .content-card {
+            background-color: #121214; /* Grafite quase preto para destacar do fundo */
+            border: 1px solid #2d2d30;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Botão Voltar */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #8c8c8c;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            transition: color 0.2s ease;
+        }
+        .back-link:hover {
+            color: #4cd9ef;
+        }
+
+        /* Cabeçalho de Títulos */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #2d2d30;
+            padding-bottom: 30px;
+        }
+        h1 {
+            font-family: 'Arial Black', 'Impact', sans-serif;
+            font-size: 2.5rem;
+            color: #4cd9ef; /* Título no Azul Ciano */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.05rem;
+            color: #e5c158; /* Subtítulo no Dourado Ouro */
+            max-width: 700px;
+            margin: 0 auto;
+            font-weight: 500;
+        }
+
+        /* --- LISTA DE INTEGRANTES (FOTOS NA VERTICAL) --- */
+        .member-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 35px;
+            margin-bottom: 50px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #2d2d30;
+        }
+        .member-row:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        /* Container da Foto */
+        .member-photo-box {
+            flex: 0 0 220px; /* Largura fixa para manter as fotos verticais idênticas */
+            text-align: center;
+        }
+        .member-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid #3d3d42;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        /* Bloco de Texto */
+        .member-bio {
+            flex: 1;
+        }
+        .member-instrument {
+            font-size: 0.9rem;
+            color: #e5c158; /* Instrumento em Dourado */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .member-bio h2 {
+            font-family: 'Arial Black', sans-serif;
+            font-size: 1.6rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .member-bio p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+            text-indent: 40px; /* Recuo no início de cada parágrafo */
+        }
+        .member-bio p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* --- ADAPTAÇÃO PARA CELULAR --- */
+        @media (max-width: 768px) {
+            .member-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .member-photo-box {
+                flex: 0 0 auto;
+                width: 60%; /* Foto reduzida e centralizada no mobile */
+            }
+            .member-bio h2, .member-instrument {
+                text-align: center;
+            }
+        }
+
+        /* Rodapé Sutil */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #555555;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <main class="content-card">
+            
+            <!-- Botão Voltar -->
+            <a href="../index.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i> Voltar ao Início
+            </a>
+
+            <!-- Cabeçalho Principal -->
+            <header>
+                <h1>Integrantes</h1>
+                <p class="subtitle">Espaço para apresentar a trajetória artística, formação e</p>
+                <p class="subtitle">principais atuações dos músicos do trio.</p>
+            </header>
+
+            <!-- 1º Integrante: Piano -->
+            <div class="member-row">
+                <div class="member-photo-box">
+                    <img src="image_1MIYQz.png" alt="Ralph Nowakowski Biscouto" class="member-photo">
+                </div>
+                <div class="member-bio">
+                    <span class="member-instrument">Piano</span>
+                    <h2>Ralph Nowakowski Biscouto</h2>
+                    <p>Ralph Nowakowski Biscouto é pianista, natural de Curitiba, Paraná. Iniciou seus estudos musicais aos sete anos na Academia de Música Som Livre, sob orientação da professora Lislie Moraes de Carvalho. Posteriormente, foi admitido, por meio de processo seletivo, no curso de extensão em piano da Escola de Música e Belas Artes do Paraná (EMBAP).</p>
+                    <p>Nessa instituição, atual Universidade Estadual do Paraná (UNESPAR), concluiu o Curso Superior de Instrumento e a Especialização em Performance Musical, na classe do professor Sérgio T. André. Ao longo de sua formação, participou de aulas e masterclasses com importantes pianistas, entre os quais, Leilah Paiva, Marcilda Clis, Ney Fialkow, Beatriz Furlanetto e Clenice Ortigara.</p>
+                    <p>Sua trajetória inclui premiações e participações como finalista em competições nacionais e internacionais. Entre os principais destaques, estão o primeiro lugar no V Concurso Nacional da EMBAP, o primeiro lugar no XXI Concurso Latino-Americano Rosa Mística, o primeiro lugar no I Concurso de Piano Prof.ª Edna Bassetti Habith, além de menções honrosas por melhor interpretação de obras de autor brasileiro e estrangeiro. Também, foi finalista no III Concurso Internacional Honorina Barra, conquistou o segundo lugar no I Concurso Infanto-Juvenil de Piano da ABPP, com destaque para melhor interpretação de obras barroca e contemporânea, e o terceiro lugar no II Concurso Nacional Infanto-Juvenil de Piano da Associação Brasileira de Professores de Piano (ABPP).</p>
+                    <p>Ao longo dos anos, apresentou-se como solista e camerista em diversos concertos, festivals e séries musicais, como o II Encontro de Inverno da ABPP, o ciclo Jovens Intérpretes Paranaenses, o I Festival de Artes do Colégio Militar de Curitiba — Liberdarte, o I Festival de Música do Cenáculo da Igreja da Ordem, o IV Festival Penalva, a série Música na Igrejinha, a Série Grandes Mestres e a Série Sextas Musicais.</p>
+                    <p>Atuou como pianista convidado da banda sinfônica da 37ª Oficina de Música de Curitiba, sob regência de Edivaldo Chiquini, e executou, junto à Camerata Antiqua de Curitiba, sob regência de Márcio Steuernagel, as obras finalistas do concurso nacional de composição da IV Bienal Música Hoje.</p>
+                    <p>Atualmente, desenvolve atividades como solista e camerista, integrando o Haicai Trio.</p>
+                </div>
+            </div>
+            <!-- 2º Integrante: Clarone -->
+<div class="member-row">
+    <div class="member-photo-box">
+        <img src="image_S1A-yE.png" alt="Mateus Falkemback" class="member-photo">
+    </div>
+    <div class="member-bio">
+        <span class="member-instrument">Clarone</span>
+        <h2>Mateus Falkemback</h2>
+        <p>Mateus Falkemback é clarinetista e claronista, natural de Santa Maria, Rio Grande do Sul. Iniciou seus estudos musicais aos seis anos com seu pai, Aragão Borges Falkemback, e teve seu primeiro contato com a clarineta aos quinze anos, sob orientação do professor Adão Batista de Melo.</p>
+        <p>Foi integrante da Orquestra Sinfônica Jovem de Santa Maria, participando de apresentações no Brasil e no exterior. Em 2005, ingressou no Bacharelado em Clarineta da Universidade Federal de Santa Maria, na classe do professor Guilherme Garbosa, posteriormente transferindo sua formação para a Universidade Federal do Estado do Rio de Janeiro (UNIRIO), onde estudou com os professores Fernando Silveira e Marcos Passos.</p>
+        <p>Participou de masterclasses e aperfeiçoamentos com renomados clarinetistas, entre os quais, Cristiano Alves, Yang Gao, Laura Sanchez, José Botelho e Jorge Montilla.</p>
+        <p>Como integrante e fundador do Quarteto de Clarinetas Ômega, representou o Brasil no XXI Festival Internacional de Orquestras Jovens da Europa (Eurochestries), na França, retornando ao país em turnê internacional. Com o grupo, conquistou o primeiro lugar no II Concurso de Piano e Música de Câmara Eduardo Tagliatti e no II Concurso de Música de Câmara Furnas Festival Villa-Lobos.</p>
+        <p>Atuou junto à Orquestra Sinfônica Brasileira e integrou a Banda Filarmônica do Rio de Janeiro entre 2010 e 2019, inicialmente como clarinetista baixo e, posteriormente, como clarinetista spalla, apresentando-se em importantes salas de concerto do Estado. Nesse período, realizou a estreia mundial da obra Bass Clarinet Speedway, de Armando Ghidoni, escrita em sua homenagem.</p>
+        <p>Em 2015, foi contemplado com bolsa de intercâmbio para a University of Georgia (Estados Unidos), à qual retornou em 2017 para cursar o Mestrado em Performance em Clarineta, sob orientação do professor Dr. David Ray McClellan. Durante sua permanência na instituição, atuou como bolsista de ensino, organizou masterclasses, integrou grupos de música contemporânea e foi vencedor do concurso de solistas da universidade, apresentando o Concerto para Clarineta de Mozart.</p>
+        <p>Ao retornar ao Brasil, participou de produções da Orquestra Sinfônica do Theatro Municipal do Rio de Janeiro e, desde 2021, integra a Banda do Exército Brasileiro em Curitiba. É membro do Quarteto Paran4, tendo participado da organização do I Festival de Clarinetas de Curitiba.</p>
+        <p>Atualmente, integra o Haicai Trio e atua como músico convidado da Orquestra Sinfônica do Paraná, da Orquestra Filarmônica SCAR, da Orquestra da PUCPR e de diversos grupos camerísticos e bandas sinfônicas da região Sul do Brasil.</p>
+    </div>
+</div>
+        <!-- 3º Integrante: Clarinete -->
+<div class="member-row">
+    <div class="member-photo-box">
+        <img src="image_18fm36.png" alt="Samuel Júnior" class="member-photo">
+    </div>
+    <div class="member-bio">
+        <span class="member-instrument">Clarinete</span>
+        <h2>Samuel Júnior</h2>
+        <p>Samuel Júnior é clarinetista, professor e músico, natural de Curitiba, Paraná. Iniciou seus estudos musicais aos sete anos com seu pai, Samuel Pinheiro dos Santos, e aprofundou sua formação no Conservatório de Música Popular Brasileira de Curitiba, onde estudou com o professor Sérgio Albach.</p>
+        <p>É bacharel em clarineta pela Escola de Música e Belas Artes do Paraná (Universidade Estadual do Paraná – EMBAP/UNESPAR), sob orientação do professor Maurício Carneiro, e pós-graduado em Educação Musical pela mesma instituição. Em 2018, participou do Mestrado em Clarineta na Liszt Ferenc Academy of Music, em Budapeste, Hungria, sob orientação do professor Balázs Rumy.</p>
+        <p>Ao longo de sua trajetória, participou de importantes festivais nacionais e internacionais, como a Oficina de Música de Curitiba, o Festival Internacional de Música SESC em Pelotas, o Festival de Música nas Montanhas e o FEMUSC (Festival de Música de Santa Catarina), tendo aulas com Ubaldo Versolato, Alexandre Ribeiro, Jean Louis Bergerard, Mariam Adam, Jairo Wilkens, Michel Lethiec, Luís Afonso Montanha, Sérgio Burgani, Joel Barbosa e Tiago Naguel.</p>
+        <p>Foi clarinetista da Orquestra à Base de Sopro de Curitiba, onde atuou ao lado de artistas como Waltel Branco, Léa Freire e Roberto Sion. Entre 2014 e 2016, atuou como primeiro clarinetista e chefe das madeiras da Orquestra Sinfônica de Ponta Grossa, sob direção artística do maestro Jorge Augusto Scheffer. Também, foi músico convidado da Orquestra Sinfônica do Paraná, entre 2016 e 2018.</p>
+        <p>Como solista, foi vencedor do Programa Prelúdio, realizado pela TV Cultura, sob direção musical do maestro Júlio Medaglia. Na música de câmara, com o duo Dualidade Sonora, conquistou o 1º lugar no V Concurso de Música de Câmara do Festival Villa-Lobos, realizado na Universidade Federal do Rio de Janeiro.</p>
+        <p>Atualmente, integra o Haicai Trio, atua como músico convidado da Camerata Antiqua de Curitiba e exerce atividades como clarinetista, professor e pesquisador da música de câmara.</p>
+    </div>
+</div>
